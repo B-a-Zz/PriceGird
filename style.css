@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap');
+
+/* font-family: 'Karla', sans-serif; */
+
+*,
+*::before,
+*::after {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif
+}
+
+
+/* variable  */
+
+:root {
+    /* Primary */
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    /* neutral */
+    --light-grey: hsl(205, 8%, 72%);
+    --greyish-blue: hsl(218, 13%, 56%);
+}
+
+
+/* global styles */
+
+body {
+    background-color: white;
+    display: grid;
+}
+
+
+/* community styles */
+
+.join-community,
+section {
+    max-width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.join-community h2 {
+    color: var(--cyan);
+}
+
+.join-community .offer {
+    color: var(--bright-yellow);
+    margin-top: 1.8rem;
+    margin-bottom: .8rem;
+}
+
+.join-community .lorem {
+    color: var(--light-grey);
+}
+
+
+/* Monthly sub */
+
+.monthly-subscription {
+    background-color: var(--cyan);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.monthly-subscription h2 {
+    font-size: .6rem;
+}
+
+.monthly-subscription .price-content {
+    margin: 1.2rem 0;
+}
+
+.monthly-subscription .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.monthly-subscription .price span {
+    font-size: .6rem;
+    position: absolute;
+    transform: translate(5px, 9px);
+    color: rgba(243, 237, 237, 0.644);
+}
+
+.monthly-subscription .cta {
+    text-align: center;
+    background-color: var(--bright-yellow);
+    max-width: 80%;
+}
+
+
+/* Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
