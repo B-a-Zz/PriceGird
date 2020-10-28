@@ -31,6 +31,7 @@
 body {
     background-color: white;
     display: grid;
+    min-height: 100vh;
 }
 
 
@@ -93,9 +94,25 @@ section {
 }
 
 .monthly-subscription .cta {
+    display: inline-block;
     text-align: center;
-    background-color: var(--bright-yellow);
-    max-width: 80%;
+    background-color: rgb(172, 214, 118);
+    padding: .5rem 4.9rem;
+    margin: auto;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid rgba(216, 252, 163, 0.301);
+    cursor: pointer;
+}
+
+.whyus {
+    background-color: hsl(179, 50%, 50%);
+    color: white;
+    text-align: left;
+}
+
+.whyus p {
+    padding-bottom: 1rem;
 }
 
 
@@ -108,4 +125,16 @@ section {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+@media screen and (min-width:525px) {
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
