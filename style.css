@@ -109,6 +109,11 @@ section {
     box-shadow: 0px 2px 5px 1px rgba(41, 41, 43, 0.445);
 }
 
+.monthly-subscription .cta:hover {
+    background-color: rgba(131, 127, 127, 0.63);
+    color: rgb(207, 247, 62);
+}
+
 .price-cta {
     padding-top: 1.5rem;
     display: flex;
